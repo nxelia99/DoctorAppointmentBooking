@@ -7,6 +7,7 @@ import icon02 from '../assets/images/icon02.png'
 import icon03 from '../assets/images/icon03.png'
 import {BsArrowRight} from 'react-icons/bs'
 import {Link} from 'react-router-dom';
+
 const Home = () => {
   return (
     <>
@@ -18,8 +19,7 @@ const Home = () => {
             {/* hero content */}
             <div>
               <div className="lg:w-[570px]">
-                <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px]
-                md:leading-[70px]'>We help a healthy, longer life.</h1>
+                <h1 className='text-[36px] text-headingColor font-[800] md:text-[60px]'>We help a healthy, longer life.</h1>
                 <p className="text__para">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                 ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -31,19 +31,19 @@ const Home = () => {
             <div className='mt-[30px] lg:mt[70px] flex flex-col lg:flex-row lg:items-center gap-5 
             lg:gap-[30px]'>
               <div>
-                <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700]
+                <h2 className='text-[36px] lg:text-[44px] font-[700]
                 text-headingColor'> +30 </h2>
                 <span className='w-[100px] h-2 bg-yellowColor rounded-full block mt-[-14px]'></span>
                 <p className="text__para">Years of experience</p>
               </div>
               <div>
-                <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700]
+                <h2 className='text-[36px] lg:text-[44px] font-[700]
                 text-headingColor'> +15 </h2>
                 <span className='w-[100px] h-2 bg-purpleColor rounded-full block mt-[-14px]'></span>
                 <p className="text__para">Clinic Locations</p>
               </div>
               <div>
-                <h2 className='text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700]
+                <h2 className='text-[36px] lg:text-[44px] font-[700]
                 text-headingColor'> 100% </h2>
                 <span className='w-[100px] h-2 bg-irisBlueColor rounded-full block mt-[-14px]'></span>
                 <p className="text__para">Years of experience</p>
