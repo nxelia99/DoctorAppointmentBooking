@@ -41,11 +41,11 @@
 
 @media only screen and (max-with:768px) {
     .heading{
-        @apply text-[26px] leading-[36px];
+        @apply text-[26px];
     }
 
     .text__para{
-        @apply text-[16px] leading-7 mt-3;
+        @apply text-[16px];
     }
 
 }
