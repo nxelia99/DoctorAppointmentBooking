@@ -12,6 +12,7 @@ import ServiceList from '../components/Services/ServiceList'
 import featureImg from '../assets/images/feature-img.png'
 import videoIcon from '../assets/images/video-icon.png'
 import avatarIcon from '../assets/images/avatar-icon.png'
+import DoctorList from '../components/Doctors/DoctorList'
 
 
 const Home = () => {
@@ -218,6 +219,21 @@ const Home = () => {
         </div>
 
       </div>
+    </section>
+
+    {/* our doctors */}
+    <section>
+    <div className="container">
+      <div className="xl:w-[470px] mx-auto">
+        <h2 className="heading text-center">
+          Our Doctors.
+        </h2>
+        <p className="text__para text-center">World-class care for everyone. Our health System offers unmatched, expert health care.</p>
+
+      </div>
+
+      <DoctorList />
+    </div>
     </section>
     
     </>
