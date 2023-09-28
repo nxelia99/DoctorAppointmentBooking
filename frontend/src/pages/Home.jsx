@@ -27,7 +27,7 @@ const Home = () => {
           <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-between'>
             {/* hero content */}
             <div>
-              <div className="lg:w-[570px]">
+              <div className="lg:w-[570px]  ml-[20px]">
                 <h1 className='text-[36px] text-headingColor font-[800] md:text-[60px]'>We help a healthy, longer life.</h1>
                 <p className="text__para">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -38,7 +38,7 @@ const Home = () => {
               {/* hero counter */}
 
             <div className='mt-[30px] lg:mt[70px] flex flex-col lg:flex-row lg:items-center gap-5 
-            lg:gap-[30px]'>
+            lg:gap-[30px]  ml-[20px]'>
               <div>
                 <h2 className='text-[36px] lg:text-[44px] font-[700]
                 text-headingColor'> +30 </h2>
@@ -242,16 +242,15 @@ const Home = () => {
     <section>
       <div className="container">
         <div className="flex justify-between gap-[50px] lg:gap-0">
-          <div className=' w-1*2 hidden md:block'>
+          <div className='w-1/2 hidden md:block'>
             <img src={faqImg} alt="doctor image" />
+            </div>
             <div className="w-full md:w-1/2">
               <h2 className="heading">
                 Most questions by our patients
               </h2>
               <FaqList />
             </div>
-            </div>
-
         </div>
       </div>
     </section>
