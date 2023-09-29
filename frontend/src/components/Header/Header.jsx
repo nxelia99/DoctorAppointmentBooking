@@ -43,7 +43,7 @@ const Header = () => {
     return ()=> window.removeEventListener('scroll', handleSitckyHeader)
   })
 
-  const toggleMenu = () => menuRef.current.classList.toggle('show_:menu')
+  const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 
   return <header className='header flex items-center' ref={headerRef}>
     <div className="container">
