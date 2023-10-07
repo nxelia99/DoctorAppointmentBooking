@@ -83,12 +83,12 @@ const Footer = () => {
         flex-wrap gap-[30px]">
           <div>
             <img src={logo} alt="" />
-            <p className='text-[16px] font-[400] text-textColor mt-[4]'>
+            <p className='text-[14px] font-[400] text-textColor mt-[4]'>
               Copyright © {year} developed by Noelia Fdez all rights reserved.</p>
 
               <div className='flex items-center gap-3 mt-4'>
                 {socialLinks.map((link, index)=> <Link to={link.path} key={index}
-                className='w-8 h-8 border border-solid border-[#181A1E] rounded-full
+                className='w-7 h-7 border border-solid border-[#181A1E] rounded-full
                 flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
                   {link.icon}</Link>)}
               </div>
