@@ -5,6 +5,13 @@ const FeedbackForm = () => {
 
   const [rating, setRating] = useState(0)  
   const [hover, setHover] = useState(0)
+  const [reviewText, setReviewText] = useState('')
+
+  const handleSubmitReview = async e=>{
+    e.previewDefault()
+
+    //api later
+  }
 
   return (
         <form>
@@ -38,6 +45,22 @@ const FeedbackForm = () => {
                     })}
                 </div>
             </div>
+
+            <div className="mt-[30px]">
+            <h3 className="text-headingColor text-[16px] leading-6
+                font-semibold mb-4">
+                    Share your feedback with us
+                </h3>
+                <textarea name="border border-solid border-[#0066ff34]
+                focus:outline outline-primaryColor w-full
+                py-3 rounded-md" placeholder='Write your message' 
+                rows="5" 
+                cols='60'
+                onChange={()=> setReviewText(e.target.value)}>
+                </textarea>
+            </div>
+            <button className="btn" type='submit'
+            onClick={handleSubmitReview}>Submit Feedback</button>
         </form>
   )
 }

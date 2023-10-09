@@ -32,7 +32,7 @@ const Home = () => {
                 <h1 className='text-[36px] text-headingColor font-[800] md:text-[60px]'>We help a healthy, longer life.</h1>
                 <p className="text__para">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
                 <button className='btn'>Request an Appointment</button>
               </div>
 
