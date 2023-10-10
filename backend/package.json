@@ -1,0 +1,37 @@
+{
+  "name": "doctorappointmentbooking",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxelia99/DoctorAppointmentBooking.git"
+  },
+  "keywords": [
+    "full",
+    "stack"
+  ],
+  "author": "Nxelia99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nxelia99/DoctorAppointmentBooking/issues"
+  },
+  "homepage": "https://github.com/nxelia99/DoctorAppointmentBooking#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^10.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.6.1"
+  }
+}
