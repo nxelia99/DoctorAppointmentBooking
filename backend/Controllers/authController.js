@@ -6,7 +6,7 @@ import bcrypt from 'bcryptjs'
 
 const generateToken = user=>{
     return jwt.sign(
-        {id:user._id, 
+        {id: user._id, 
         role: user.role}, 
         process.env.JWT_SECRET_key,
         {
@@ -98,7 +98,7 @@ export const login = async(req, res) => {
 
         //check password
 
-        const isPasswordMatched = await bcrypt.compare(password, user.password);
+        const isPasswordMatched = await bcrypt.compare(req.body.password, user.password);
         
         if(!isPasswordMatched){
             return res
@@ -125,3 +125,4 @@ export const login = async(req, res) => {
 
     }
 }
+
