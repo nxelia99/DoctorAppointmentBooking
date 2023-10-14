@@ -8,7 +8,7 @@ export const authenticate = async (req, res, next)=>{
 
     // check if token exists
 
-    if(!authToken || authToken.startsWith('Bearer')){
+    if(!authToken || !authToken.startsWith('Bearer')){
         return res.status(401).json({success: false, message: "No token, authorization denied"})
     }
 
@@ -29,7 +29,7 @@ export const authenticate = async (req, res, next)=>{
 
 }
 
-export const restrict = roles => async(req, res,next)=>{
+export const restrict = roles => async(req, res, next)=>{
     const userId = req.userId
     let user;
 
@@ -46,7 +46,8 @@ export const restrict = roles => async(req, res,next)=>{
 
     if(!roles.includes(user.role)){
         return res.status(401).json({success:false, message:"You're not authorized"})
-        next();
+        
     }
+    next();
 
 }
